@@ -27,17 +27,34 @@ In meeting the minimum viable product (MVP) specifications listed below, you sho
 Demonstrate your understanding of this week's concepts by answering the following free-form questions.
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your team lead
+___
 
 1. Describe the biggest difference between `.forEach` & `.map`.
+        ***`.forEach` iterates through an array based on whatever parameters you give it. `.map` does what `.forEach` does but returns a completely new array.***
+___
 
 2. What is the difference between a function and a method?
+        ***A Function is an instruction you give in JS to do something.**
+        **A method is a property of an object whose value is a function.*** 
+___
 
 3. What is closure?
+        ***Closure in JS simply refers to inheritance and access. Child elements/functions have access to variables, objects, arrays and other data types that are declared above their scope, all the way to the global scope. Parent elements, however, do not have access to variables, objects, arrays and data types declared within their children.***
+___
 
 4. Describe the four rules of the 'this' keyword.
+      1. Global/Window Object Binding: The value of `this` is the window object.
+
+      2. Implicit Binding: When calling a function using `.dot` notation, the value of `this` is the object to the left (or immediately preceding) `this`.
+
+      3. `new` Binding: When creating a constructor function using the `new` keyword, the value of `this` is the specific instance of the object created by the constructor.
+
+      4. Explicit Binding: When `.call`, `.apply` or `.bind` are used, they explicitly set the value of `this`.
+___
 
 5. Why do we need super() in an extended class?
-
+        `super()` acts as a way to call/inherit the properties and methods of the parent class - essentially replacing the `.prototype` keyword.
+___
 ## Project Set up
 
 Follow these steps to set up and work on your project:
